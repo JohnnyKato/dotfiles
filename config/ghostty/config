@@ -1,0 +1,11 @@
+# font
+font-feature = -calt, -liga, -dlig
+font-size = 12
+adjust-cell-height = 6
+
+# fix window border
+window-padding-x = 0
+window-padding-y = 0
+
+# theme
+theme = TokyoNight Night
