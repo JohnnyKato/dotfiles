@@ -22,7 +22,7 @@ return {
                     keywords = {italic = false},
                 },
             })
-            vim.cmd.colorscheme('tokyonight-night')
+            -- vim.cmd.colorscheme('tokyonight-night')
         end,
     },
     {
@@ -36,6 +36,18 @@ return {
                 no_bold = true,
             })
             -- vim.cmd.colorscheme('catppuccin-mocha')
+        end
+    },
+    {
+        'vague-theme/vague.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require('vague').setup({
+                bold = false,
+                italic = false
+            })
+            vim.cmd.colorscheme('vague')
         end
     }
 }
