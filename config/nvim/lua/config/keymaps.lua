@@ -49,4 +49,4 @@ map("n", "<leader>l", "<cmd>Lazy<cr>")
 map("n", "<leader>cm", "<cmd>Mason<cr>")
 
 -- Signature help
-map({"n", "i"}, "<c-a>", vim.lsp.buf.signature_help)
+-- map({"n", "i"}, "<c-a>", vim.lsp.buf.signature_help)

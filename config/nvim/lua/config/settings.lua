@@ -6,13 +6,13 @@ vim.g.localleader = ' '
 opt.number = true
 opt.relativenumber = true
 opt.scrolloff = 10
-opt.sidescrolloff = 8
+opt.sidescrolloff = 10
 opt.wrap = false
 opt.confirm = true
 opt.laststatus = 3
 opt.showmatch = true
 opt.cursorline = true
-opt.showmode = false
+-- opt.showmode = false
 
 -- Tabbing / Indentantion
 opt.tabstop = 4
