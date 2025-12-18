@@ -1,0 +1,50 @@
+" Plugins
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+
+" Settings
+let mapleader=" "
+set smartcase
+set incsearch
+set hlsearch
+set relativenumber
+set clipboard+=unnamed
+set scrolloff=10
+set sidescrolloff=10
+set cursorline
+set backspace=indent,eol,start
+
+" Keymaps
+map <silent> <esc> :nohl<cr>
+
+map <s-h> <Action>(PreviousTab)
+map <s-l> <Action>(NextTab)
+map <leader>ww <Action>(MoveEditorToOppositeTabGroup)
+
+vmap < <gv
+vmap > >gv
+
+nmap n nzzzv
+nmap N Nzzzv
+nmap <c-u> <c-u>zz
+nmap <c-d> <c-d>zz
+
+nmap <c-h> <c-w>h
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
+nmap <c-l> <c-w>l
+
+nmap <leader>- <c-w>s
+nmap <leader>\\ <c-w>v
+
+nmap gd <Action>(GotoDeclaration)
+
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fg <Action>(TextSearchAction)
+nmap <leader>fs <Action>(GotoSymbol)
+nmap <leader>fa <Action>(SearchEverywhere)
+
+nmap <leader>ca <Action>(Generate)
+nmap <leader>cd <Action>(ShowHoverInfo)
+
+nmap <s-k> <Action>(QuickJavaDoc)
