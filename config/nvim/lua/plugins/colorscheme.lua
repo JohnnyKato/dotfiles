@@ -12,20 +12,6 @@ return {
         end
     },
     {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        config = function()
-            require('tokyonight').setup({
-                styles = {
-                    comments = {italic = false},
-                    keywords = {italic = false},
-                },
-            })
-            -- vim.cmd.colorscheme('tokyonight-night')
-        end,
-    },
-    {
         "catppuccin/nvim",
         name = "catppuccin",
         lazy = false,
@@ -47,7 +33,25 @@ return {
                 bold = false,
                 italic = false
             })
-            vim.cmd.colorscheme('vague')
+            -- vim.cmd.colorscheme('vague')
+        end
+    },
+    {
+        'ellisonleao/gruvbox.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require('gruvbox').setup({
+                bold = false,
+                italic = {
+                    strings = false,
+                    emphasis = false,
+                    comments = false,
+                    folds = false,
+                },
+                contrast = 'hard'
+            })
+            vim.cmd.colorscheme('gruvbox')
         end
     }
 }

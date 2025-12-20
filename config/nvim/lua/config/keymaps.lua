@@ -14,7 +14,7 @@ map("n", "<c-l>", "<c-w>l")
 
 -- Splitting & Resizing
 map("n", "<leader>-", "<c-w>s")
-map("n", "<leader>|", "<c-w>v")
+map("n", "<leader>\\", "<c-w>v")
 map("n", "<leader>wd", "<c-w>c")
 map("n", "<c-up>", "<cmd>resize +2<cr>")
 map("n", "<c-down>", "<cmd>resize -2<cr>")
