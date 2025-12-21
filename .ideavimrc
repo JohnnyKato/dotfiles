@@ -24,6 +24,12 @@ map <leader>ww <Action>(MoveEditorToOppositeTabGroup)
 vmap < <gv
 vmap > >gv
 
+vmap <m-j> <Action>(MoveLineDown)
+vmap <m-k> <Action>(MoveLineUp)
+
+nmap <m-j> <Action>(MoveLineDown)
+nmap <m-k> <Action>(MoveLineUp)
+
 nmap n nzzzv
 nmap N Nzzzv
 nmap <c-u> <c-u>zz
