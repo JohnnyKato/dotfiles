@@ -19,6 +19,6 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
-  install = { colorscheme = { "catppuccin-mocha" } },
+  install = { colorscheme = { "gruvbox" } },
   checker = { enabled = true },
 })

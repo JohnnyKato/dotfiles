@@ -12,7 +12,7 @@ opt.confirm = true
 opt.laststatus = 3
 opt.showmatch = true
 opt.cursorline = true
--- opt.showmode = false
+opt.showmode = false
 
 -- Tabbing / Indentantion
 opt.tabstop = 4
@@ -32,7 +32,7 @@ opt.incsearch = true
 
 -- Visual Settings
 opt.termguicolors = true
-opt.signcolumn = "yes"
+-- opt.signcolumn = "yes"
 opt.completeopt = "menuone,noinsert,noselect"
 opt.conceallevel = 0
 
