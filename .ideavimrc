@@ -7,7 +7,7 @@ let mapleader=" "
 set smartcase
 set incsearch
 set hlsearch
-set relativenumber
+" set relativenumber
 set clipboard+=unnamed
 set scrolloff=10
 set sidescrolloff=10
@@ -26,7 +26,6 @@ vmap > >gv
 
 vmap <m-j> <Action>(MoveLineDown)
 vmap <m-k> <Action>(MoveLineUp)
-
 nmap <m-j> <Action>(MoveLineDown)
 nmap <m-k> <Action>(MoveLineUp)
 
@@ -46,9 +45,10 @@ nmap <leader>\\ <c-w>v
 nmap gd <Action>(GotoDeclaration)
 
 nmap <leader>ff <Action>(GotoFile)
-nmap <leader>fg <Action>(TextSearchAction)
+nmap <leader>fg <Action>(FindInPath)
 nmap <leader>fs <Action>(GotoSymbol)
 nmap <leader>fa <Action>(SearchEverywhere)
+nmap <leader>fh <Action>(ReplaveInPath)
 
 nmap <leader>ca <Action>(Generate)
 nmap <leader>cd <Action>(ShowHoverInfo)
