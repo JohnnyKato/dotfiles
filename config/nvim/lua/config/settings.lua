@@ -4,7 +4,7 @@ vim.g.localleader = ' '
 
 -- Basic Settingss
 opt.number = true
-opt.relativenumber = true
+-- opt.relativenumber = true
 opt.scrolloff = 10
 opt.sidescrolloff = 10
 opt.wrap = false
@@ -13,6 +13,7 @@ opt.laststatus = 3
 opt.showmatch = true
 opt.cursorline = true
 opt.showmode = false
+opt.updatetime = 200
 
 -- Tabbing / Indentantion
 opt.tabstop = 4
@@ -23,6 +24,7 @@ opt.smartindent = true
 opt.autoindent = true
 opt.grepprg = "rg --vimgrep"
 opt.grepformat = "%f:%l:%c:%m"
+opt.breakindent = true
 
 -- Search Settings
 opt.ignorecase = true
@@ -32,7 +34,7 @@ opt.incsearch = true
 
 -- Visual Settings
 opt.termguicolors = true
--- opt.signcolumn = "yes"
+opt.signcolumn = "yes"
 opt.completeopt = "menuone,noinsert,noselect"
 opt.conceallevel = 0
 
@@ -46,6 +48,7 @@ opt.autowrite = false
 
 -- Behavio Settings
 opt.errorbells = false
+opt.inccommand = 'split'
 opt.backspace = "indent,eol,start"
 opt.autochdir = false
 opt.path:append("**")
@@ -66,4 +69,3 @@ opt.foldlevel = 99
 -- Split Behavior
 opt.splitright = true
 opt.splitbelow = true
-

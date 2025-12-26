@@ -1,6 +1,5 @@
 return {
     'lewis6991/gitsigns.nvim',
-    enabled = false,
     event = { "BufReadPre", "BufNewFile" },
     opts = {},
     keys = {
@@ -15,6 +14,6 @@ return {
         {'<leader>hp', '<cmd>Gitsigns preview_hunk<cr>'},
 
         -- diff
-        {'<leader>dw', '<cmd>Gitsigns toggle_word_diff<cr>'},
+        -- {'<leader>dw', '<cmd>Gitsigns toggle_word_diff<cr>'},
     }
 }

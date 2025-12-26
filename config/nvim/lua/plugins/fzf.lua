@@ -19,11 +19,11 @@ return {
         {"<leader>fk", function() require('fzf-lua').keymaps() end},
 
         -- Lsp
-        {"gd", function() require('fzf-lua').lsp_definitions() end},
-        {"gD", function() require('fzf-lua').lsp_declarations() end},
-        {"gi", function() require('fzf-lua').lsp_implementations() end},
-        {"gt", function() require('fzf-lua').lsp_typedefs() end},
-        {"gr", function() require('fzf-lua').lsp_references() end},
-        {"<leader>ca", function() require('fzf-lua').lsp_code_actions() end},
+        -- {"gd", function() require('fzf-lua').lsp_definitions() end},
+        -- {"gD", function() require('fzf-lua').lsp_declarations() end},
+        -- {"gi", function() require('fzf-lua').lsp_implementations() end},
+        -- {"gt", function() require('fzf-lua').lsp_typedefs() end},
+        -- {"gr", function() require('fzf-lua').lsp_references() end},
+        -- {"<leader>ca", function() require('fzf-lua').lsp_code_actions() end},
     }
 }
