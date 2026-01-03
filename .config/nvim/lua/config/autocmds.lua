@@ -71,3 +71,14 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     end,
 })
 
+-- fix tmux treesitter
+-- vim.api.nvim_create_autocmd('User', {
+--     pattern = 'TSUpdate',
+--     callback = function()
+--         local tmux_parser = require('nvim-treesitter.parsers')['tmux']
+--         tmux_parser.install_info = {
+--             url = 'https://github.com/Freed-Wu/tree-sitter-tmux',
+--             branch = 'pre-commit-ci-update-config',
+--         }
+--     end,
+-- })
