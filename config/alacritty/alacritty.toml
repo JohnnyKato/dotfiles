@@ -1,0 +1,15 @@
+[general]
+import = ["vague.toml"]
+
+[window]
+startup_mode = "Maximized"
+
+[font]
+normal = {family = "JetBrainsMonoNL Nerd Font", style = "Regular"}
+size = 12
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = {shape = "Beam", blinking = "On"}
