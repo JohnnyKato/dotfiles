@@ -12,15 +12,6 @@ map("n", "<c-j>", "<c-w>j")
 map("n", "<c-k>", "<c-w>k")
 map("n", "<c-l>", "<c-w>l")
 
--- terminal
-map('t', '<esc><esc>', '<c-\\><c-n>')
-map('n', '<leader>nt', ':terminal<cr>')
-
--- buffers
-map('n', '<s-h>', ':bprev<cr>')
-map('n', '<s-l>', ':bnext<cr>')
--- map('n', '<leader>wq', ':bdelete<cr>')
-
 -- Splitting & Resizing
 map("n", "<leader>-", "<c-w>s")
 map("n", "<leader>\\", "<c-w>v")
@@ -40,15 +31,12 @@ map("n", "J", "mzJ`z")
 -- Clear search
 map("n", "<esc>", "<cmd>nohlsearch<cr>")
 
--- Save file
--- map({"i", "x", "n", "s"}, "<c-s>", "<cmd>w<cr>")
-
 -- Quit
 map("n", "<leader>qq", "<cmd>qa<cr>")
 
 -- Netrw
 -- map("n", "<leader>e", "<cmd>Ex<cr>")
-map("n", "<leader>e", "<cmd>Neotree toggle<cr>")
+-- map("n", "<leader>e", "<cmd>Neotree toggle<cr>")
 
 -- Diagnostics
 map("n", "<leader>cd", vim.diagnostic.open_float)

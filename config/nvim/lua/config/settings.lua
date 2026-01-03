@@ -4,7 +4,7 @@ vim.g.localleader = ' '
 
 -- Basic Settingss
 opt.number = true
--- opt.relativenumber = true
+opt.relativenumber = true
 opt.scrolloff = 10
 opt.sidescrolloff = 10
 opt.wrap = false

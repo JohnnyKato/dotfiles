@@ -41,12 +41,12 @@ return {
             map('<leader>ca', function() require('fzf-lua').lsp_code_actions() end)
         end,
     },
-    {
-        'seblyng/roslyn.nvim',
-        ---@module 'roslyn.config'
-        ---@type RoslynNvimConfig
-        ft = {'cs', 'razor'},
-        opts = {},
-    },
-    {'Decodetalkers/csharpls-extended-lsp.nvim'}
+    -- {
+    --     'seblyng/roslyn.nvim',
+    --     ---@module 'roslyn.config'
+    --     ---@type RoslynNvimConfig
+    --     ft = {'cs', 'razor'},
+    --     opts = {},
+    -- },
+    -- {'Decodetalkers/csharpls-extended-lsp.nvim'}
 }
