@@ -9,3 +9,9 @@ window-padding-y = 0
 
 # theme
 theme = Vague
+
+# quit without confirm
+confirm-close-surface = false
+
+# start maximized
+maximize = true
