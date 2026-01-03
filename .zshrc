@@ -1,10 +1,14 @@
 # variables
 export EDITOR=nvim
 export VISUAL=nvim
+export CARGO_TARGET_DIR=$HOME/.cargo/bin
+# bindkey -e
 bindkey -v
 
 # path
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$PATH:/home/johnnykato/.dotnet/tools
 
 # set dir fot zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -17,6 +21,9 @@ fi
 
 # source/load zinit
 source "${ZINIT_HOME}/zinit.zsh"
+
+# aliases
+alias ls='ls --color=auto'
 
 # fzf config
 source <(fzf --zsh)
@@ -48,7 +55,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light jeffreytse/zsh-vi-mode
 
 # prompt theme
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.toml)"
+eval "$(starship init zsh)"
 
 # completion and colors?
 zmodload zsh/complist
@@ -56,3 +63,11 @@ autoload -U compinit && compinit
 autoload -U colors && colors
 
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
