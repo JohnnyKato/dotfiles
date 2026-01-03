@@ -7,7 +7,7 @@ let mapleader=" "
 set smartcase
 set incsearch
 set hlsearch
-" set relativenumber
+set relativenumber
 set clipboard+=unnamed
 set scrolloff=10
 set sidescrolloff=10
