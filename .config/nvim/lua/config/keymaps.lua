@@ -37,8 +37,9 @@ map('v', '<A-k>', ':m \'<-2<CR>gv=gv')
 -- Clear search
 map("n", "<esc>", "<cmd>nohlsearch<cr>")
 
--- Quit
+-- Quit & save
 map("n", "<leader>qq", "<cmd>qa<cr>")
+map('n', '<c-s>', ':w<cr>')
 
 -- buffer maps
 map('n', '<s-h>', ':bprevious<cr>', {silent = true})
@@ -58,6 +59,9 @@ map("n", "<leader>cm", "<cmd>Mason<cr>")
 
 -- Signature help
 map({"n", "i"}, "", vim.lsp.buf.signature_help)
+if vim.g.neovide then
+    map({'n', 'i'}, '<c-\\>', vim.lsp.buf.signature_help)
+end
 
 map('n', '<leader>cf', function() vim.lsp.buf.format({async = true}) end)
 
