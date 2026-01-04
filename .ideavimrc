@@ -2,6 +2,8 @@
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'justinmk/vim-sneak'
 
 " Settings
 let mapleader=" "
@@ -55,3 +57,9 @@ nmap <leader>ca <Action>(Generate)
 nmap <leader>cd <Action>(ShowHoverInfo)
 
 nmap <s-k> <Action>(QuickJavaDoc)
+
+nmap gb <Plug>NextWholeOccurrence
+xmap gb <Plug>NextWholeOccurrence
+
+nmap gB <Plug>AllOccurrences
+xmap gB <Plug>AllOccurrences
