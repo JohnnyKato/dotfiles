@@ -44,11 +44,11 @@ map('n', '<c-s>', ':w<cr>')
 -- buffer maps
 map('n', '<s-h>', ':bprevious<cr>', {silent = true})
 map('n', '<s-l>', ':bnext<cr>', {silent = true})
-map('n', '<leader>bd', ':bdelete<cr>', {silent = true})
+map('n', '<leader>bd', ':BufDel<cr>', {silent = true})
 
 -- Netrw
 -- map("n", "<leader>e", "<cmd>Ex<cr>")
--- map("n", "<leader>e", "<cmd>Neotree toggle<cr>")
+map("n", "<c-e>", "<cmd>Neotree toggle<cr>")
 
 -- Diagnostics
 map("n", "<leader>cd", vim.diagnostic.open_float)

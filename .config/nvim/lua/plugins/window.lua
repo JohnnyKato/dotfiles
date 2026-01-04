@@ -26,6 +26,12 @@ return {
             { "<leader>cl", "<cmd>LazyGit<cr>", desc = "LazyGit" }
         }
     },
+    {
+        'akinsho/bufferline.nvim',
+        version = "*",
+        dependencies = 'nvim-tree/nvim-web-devicons',
+        opts = { options = { offsets = { { filetype = 'neo-tree', text = 'Neotree', text_align = 'left' } } } },
+    },
 
-    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons', opts = {},}
+    {'ojroques/nvim-bufdel', opts = {}},
 }
