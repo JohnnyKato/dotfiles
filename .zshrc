@@ -2,6 +2,7 @@
 export EDITOR=nvim
 export VISUAL=nvim
 export CARGO_TARGET_DIR=$HOME/.cargo/bin
+export NEOVIDE_TABS=0
 # bindkey -e
 bindkey -v
 

@@ -28,11 +28,22 @@ map("v", ">", ">gv")
 -- Better J behavior
 map("n", "J", "mzJ`z")
 
+-- Move line
+map('n', '<A-j>', ':m .+1<CR>==')
+map('n', '<A-k>', ':m .-2<CR>==')
+map('v', '<A-j>', ':m \'>+1<CR>gv=gv')
+map('v', '<A-k>', ':m \'<-2<CR>gv=gv')
+
 -- Clear search
 map("n", "<esc>", "<cmd>nohlsearch<cr>")
 
 -- Quit
 map("n", "<leader>qq", "<cmd>qa<cr>")
+
+-- buffer maps
+map('n', '<s-h>', ':bprevious<cr>', {silent = true})
+map('n', '<s-l>', ':bnext<cr>', {silent = true})
+map('n', '<leader>bd', ':bdelete<cr>', {silent = true})
 
 -- Netrw
 -- map("n", "<leader>e", "<cmd>Ex<cr>")
@@ -49,3 +60,17 @@ map("n", "<leader>cm", "<cmd>Mason<cr>")
 map({"n", "i"}, "", vim.lsp.buf.signature_help)
 
 map('n', '<leader>cf', function() vim.lsp.buf.format({async = true}) end)
+
+-- terminal maps
+map('t', '', '<c-\\><c-n>')
+
+if vim.g.neovide then
+    map('t', '<c-\\>', '<c-\\><c-n>')
+end
+
+map('n', '<leader>tt', ':term<cr>', {silent = true})
+
+map('t', '<c-h>', '<c-\\><c-n><c-w>h')
+map('t', '<c-j>', '<c-\\><c-n><c-w>j')
+map('t', '<c-k>', '<c-\\><c-n><c-w>k')
+map('t', '<c-l>', '<c-\\><c-n><c-w>l')

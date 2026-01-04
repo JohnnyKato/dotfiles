@@ -15,6 +15,20 @@ opt.cursorline = true
 opt.showmode = false
 opt.updatetime = 200
 
+-- GUI config
+vim.o.guifont = 'JetBrainsMonoNL Nerd Font:h12'
+vim.g.neovide_text_gamma = 0.0
+vim.g.neovide_refresh_rate = 120
+vim.g.neovide_text_contrast = 0.0
+vim.g.neovide_cursor_trail_size = 0.0
+vim.g.neovide_scroll_animation_length = 0.0
+vim.g.neovide_cursor_animation_length = 0.0
+vim.g.neovide_scroll_animation_far_lines = 0
+vim.g.neovide_position_animation_length = 0.0
+vim.g.neovide_cursor_short_animation_length = 0.04
+vim.g.neovide_cursor_animate_in_insert_mode = false
+
+
 -- Tabbing / Indentantion
 opt.tabstop = 4
 opt.softtabstop = 4
