@@ -4,7 +4,7 @@ export VISUAL=nvim
 export CARGO_TARGET_DIR=$HOME/.cargo/bin
 export NEOVIDE_TABS=0
 # bindkey -e
-bindkey -v
+# bindkey -v
 
 # path
 export PATH=$HOME/.local/bin:$PATH
@@ -53,7 +53,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # plugins
 zinit ice deph=1
 zinit light zsh-users/zsh-syntax-highlighting
-zinit light jeffreytse/zsh-vi-mode
+# zinit light jeffreytse/zsh-vi-mode
 
 # prompt theme
 eval "$(starship init zsh)"
