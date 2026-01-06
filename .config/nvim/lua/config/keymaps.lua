@@ -42,8 +42,8 @@ map("n", "<leader>qq", "<cmd>qa<cr>")
 map('n', '<c-s>', ':w<cr>')
 
 -- buffer maps
-map('n', '<s-h>', ':bprevious<cr>', {silent = true})
-map('n', '<s-l>', ':bnext<cr>', {silent = true})
+-- map('n', '<s-h>', ':bprevious<cr>', {silent = true})
+-- map('n', '<s-l>', ':bnext<cr>', {silent = true})
 map('n', '<leader>bd', ':BufDel<cr>', {silent = true})
 
 -- Netrw
@@ -67,10 +67,6 @@ map('n', '<leader>cf', function() vim.lsp.buf.format({async = true}) end)
 
 -- terminal maps
 map('t', '', '<c-\\><c-n>')
-
-if vim.g.neovide then
-    map('t', '<c-\\>', '<c-\\><c-n>')
-end
 
 map('n', '<leader>tt', ':term<cr>', {silent = true})
 

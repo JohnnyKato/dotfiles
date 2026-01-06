@@ -23,7 +23,7 @@ return {
                 lualine_a = {'mode'},
                 lualine_b = {'branch', 'diff', 'diagnostics'},
                 lualine_c = {{ 'filename', path = 1 }},
-                lualine_x = {{ 'lsp_status', symbols = {done = ''}, separator = ' |' }, { 'encoding', separator = ' |' }, { 'fileformat', separator = ' |' }, 'filetype'},
+                lualine_x = {{ 'lsp_status', symbols = {done = ''}, separator = ' |' }, { 'encoding', separator = ' |' }, 'filetype'},
                 lualine_y = {'progress'},
                 lualine_z = {'location'}
             },
