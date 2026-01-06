@@ -51,10 +51,13 @@ nmap <leader>ff <Action>(GotoFile)
 nmap <leader>fg <Action>(FindInPath)
 nmap <leader>fs <Action>(GotoSymbol)
 nmap <leader>fa <Action>(SearchEverywhere)
-nmap <leader>fh <Action>(ReplaveInPath)
+nmap <leader>fh <Action>(ReplaceInPath)
 
 nmap <leader>ca <Action>(Generate)
 nmap <leader>cd <Action>(ShowHoverInfo)
+
+nmap <leader>ss <Action>(Find)
+nmap <leader>sh <Action>(Replace)
 
 nmap <s-k> <Action>(QuickJavaDoc)
 
