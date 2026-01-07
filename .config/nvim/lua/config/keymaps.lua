@@ -18,8 +18,8 @@ map("n", "<leader>\\", "<c-w>v")
 map("n", "<leader>wd", "<c-w>c")
 map("n", "<c-up>", "<cmd>resize +2<cr>")
 map("n", "<c-down>", "<cmd>resize -2<cr>")
-map("n", "<c-left>", "<cmd>vertical resize -2<cr>")
-map("n", "<c-right>", "<cmd>vertical resize +2<cr>")
+map("n", "<c-right>", "<cmd>vertical resize -2<cr>")
+map("n", "<c-left>", "<cmd>vertical resize +2<cr>")
 
 -- Better indenting in visual mode
 map("v", "<", "<gv")
@@ -42,8 +42,6 @@ map("n", "<leader>qq", "<cmd>qa<cr>")
 map('n', '<c-s>', ':w<cr>')
 
 -- buffer maps
--- map('n', '<s-h>', ':bprevious<cr>', {silent = true})
--- map('n', '<s-l>', ':bnext<cr>', {silent = true})
 map('n', '<leader>bd', ':BufDel<cr>', {silent = true})
 
 -- Netrw
@@ -58,17 +56,18 @@ map("n", "<leader>l", "<cmd>Lazy<cr>")
 map("n", "<leader>cm", "<cmd>Mason<cr>")
 
 -- Signature help
-map({"n", "i"}, "", vim.lsp.buf.signature_help)
-if vim.g.neovide then
-    map({'n', 'i'}, '<c-\\>', vim.lsp.buf.signature_help)
-end
+map({"n", "i"}, "", vim.lsp.buf.signature_help)
+map({'n', 'i'}, '<c-\\>', vim.lsp.buf.signature_help)
 
-map('n', '<leader>cf', function() vim.lsp.buf.format({async = true}) end)
+map('n', '<leader>cf', function() vim.lsp.buf.format({ async = true }) end)
 
 -- terminal maps
 map('t', '', '<c-\\><c-n>')
+map('t', '<c-\\>', '<c-\\><c-n>')
 
-map('n', '<leader>tt', ':term<cr>', {silent = true})
+map('n', '<leader>tt', ':term<cr>', { silent = true })
+map('n', '<leader>tv', ':vsplit term://bash<cr>', { silent = true })
+map('n', '<leader>th', ':split term://bash<cr>', { silent = true })
 
 map('t', '<c-h>', '<c-\\><c-n><c-w>h')
 map('t', '<c-j>', '<c-\\><c-n><c-w>j')

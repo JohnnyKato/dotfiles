@@ -13,5 +13,7 @@ theme = Vague
 # quit without confirm
 confirm-close-surface = false
 
-# start maximized
+# window size and position
 maximize = true
+window-width = 128
+window-height = 33
