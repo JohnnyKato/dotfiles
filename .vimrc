@@ -122,3 +122,4 @@ nmap <silent> <leader>bd :bdelete<cr>
 nmap <leader>ff :Files .<cr>
 nmap <leader>fb :Buffers<cr>
 nmap <leader>fh :Helptags<cr>
+nmap <leader>fg :Rg .<cr>
