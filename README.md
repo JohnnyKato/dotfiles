@@ -1,3 +1,2 @@
 # dotfiles
-    Insert something here
-    asdf
+configs on github
